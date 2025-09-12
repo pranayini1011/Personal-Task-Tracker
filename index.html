@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Personal Task Tracker</h1>
+  
+  <div class="task-input">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <select id="priority">
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  <!-- Filter Dropdown -->
+  <select id="filterPriority" onchange="filterTasks()">
+    <option value="all">All</option>
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
+</div>
+
+  <div class="task-list">
+    <h2>To Do</h2>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
